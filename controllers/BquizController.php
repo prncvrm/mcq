@@ -1,13 +1,12 @@
 <?php
 namespace app\controllers;
 use yii\web\Controller;
+use app\models\bnoises;
 class BquizController extends Controller
 {
 public function actionIndex(){
-return $this->render('bquiz');
-}
-public function actionHelloWorld(){
-return "Hello world!";
+    $query = bnoises::find()->all();
+return $this->render('bquiz',['bnoises' => $query,]);
 }
 }
 ?>

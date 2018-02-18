@@ -680,12 +680,12 @@ html {
 .cause__left {
     color: #fff;
     margin: 0 auto;
-    max-width: 340px;
+    max-width: 500px;
     padding: 10px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    width: 300px
+    width: 500px
 }
 
 .cause__left a {
@@ -705,7 +705,7 @@ html {
 .cause__left__logo {
     display: block;
     margin: 0 auto 16px;
-    max-width: 200px
+    max-width: 800px
 }
 
 .cause__left__header {
@@ -1407,6 +1407,33 @@ html {
     60% {
         transform: translateY(5px)
     }
+}
+
+/* ul {
+    padding-bottom: 20px;
+} */
+
+ul li {
+    padding-bottom: 20px;
+}
+
+ul li span {
+    padding-left: 20px;
+}
+
+span {
+    padding-left: 0px;
+}
+
+body {
+    /* Set "my-sec-counter" to 0 */
+    counter-reset: my-sec-counter;
+}
+
+.cause__left p:before {
+    /* Increment "my-sec-counter" by 1 */
+    counter-increment: my-sec-counter;
+    content: "Question " counter(my-sec-counter) ". ";
 }
 
 /*# sourceMappingURL=twenty.css.map */
