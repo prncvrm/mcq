@@ -25,7 +25,9 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
 </head>
 <body>
-      <?php echo $content; ?>
+<?php $this->beginBody() ?>
+<?php echo $content; ?>
+<?php $this->endBody() ?>
 <script type="text/javascript" src="app/scripts/build/libs.js"></script>
 	<script>
 		var twenty = {
